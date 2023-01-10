@@ -1,0 +1,81 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+.heading{
+    width:100%;
+    height: 100vh;
+    font-size: 3rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #000;
+}
+.body{
+    width: 100%;
+    min-height: 100vh;
+    text-align: center;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.body h2{
+    margin-bottom: 2rem;
+}
+.body > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.body div .card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+}
+.body div .card .inner-card{
+    width: 30%;
+    border: 1px solid #000;
+    padding: 0.5rem 1rem;
+    background-color: #fff;
+}
+.black{
+    background-color: #000;
+}
+.black > h2{
+    color: #fff;
+}
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 0.5s linear;
+}
+.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+@media screen and (max-width:768px) {
+    .body div.card{
+        justify-content: space-around;
+    }
+    .body div .card .inner-card{
+        margin-bottom: 2rem;
+        width:45%;
+    }
+}
+@media screen and (max-width:480px) {
+    .body .card .inner-card{
+        width:80%;
+    }
+}
