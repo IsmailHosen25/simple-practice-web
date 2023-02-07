@@ -1,0 +1,104 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width:100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .div {
+    position: relative;
+    width:70%;
+    height: 80%;
+}
+.container .div .slide{
+    position: relative;
+    display: none;
+    width:100%;
+    height: 100%;
+}
+.container .div .slide img{
+    width:100%;
+    height: 100%;
+}
+.container .div .slide div h2{
+    display: inline-block;
+    width:50%;
+    position:absolute;
+    bottom:5px;
+    left: 50%;
+    color: white;
+}
+.container .div .btn{
+    position:absolute;
+    top:40%;
+    font-size: 30px;
+    background-color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+.prv{
+    left:0px;
+}
+.next{
+    right: 0px;
+}
+/*------------Header Start----------*/
+/*------------Header End----------*/
+
+/*--------Section-1 Start---------*/
+
+/*--------Section-1 End---------*/
+
+/*--------Section-2 Start---------*/
+ 
+/*--------Section-2 End---------*/
+
+/*--------Section-3 Start---------*/
+
+
+/*--------Section-3 End---------*/
+
+/*--------Section-4 Start---------*/
+
+/*--------Section-4 End---------*/
+
+/*--------Section-5 Start---------*/
+
+/*--------Section-5 End---------*/
+/*--------Section-6 Start---------*/
+
+
+/*--------Section-6 End---------*/
+/*--------Section-7 Start---------*/
+
+/*--------Section-7 End---------*/
+
+/*------------Media Query start---------*/
+@media screen and (max-width:768px) {
+    .container .flex .img-container .pic{
+        width:30%;
+    }
+    .container .flex .img-container .pic h2{
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width:480px) {
+    .container .flex .img-container .pic{
+        width:48%;
+    }
+    .container .flex .img-container .pic h2{
+        font-size: 1.2rem;
+    }
+    .container .flex .img-container .pic button{
+
+        padding:0.4rem 1.2rem;
+    
+    }
+}
+/*------------Media Query End---------*/

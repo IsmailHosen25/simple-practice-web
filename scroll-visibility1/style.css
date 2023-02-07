@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+.main{
+    overflow: hidden;
+    height: 100vh;
+    background-color: black;
+    color:#fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main #mainh2{
+    font-size: 200px;
+}
+.scroll1{
+    overflow: hidden;
+    margin: 5rem 0rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:2rem 0rem;
+    opacity: 0;
+}
+.scroll1 .content{
+    width:90%;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.scroll1 .content .card{
+    overflow: hidden;
+    width: 30%;
+    border: 1px solid #000;
+    padding: 1rem;
+    font-size: 2rem;
+    
+}
+
+.scroll2{
+    overflow: hidden;
+    margin: 5rem 0rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:2rem 0rem;
+    opacity: 0;
+}
+.scroll2 .content{
+    width:90%;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.scroll2 .content .card{
+    width: 30%;
+    border: 1px solid #000;
+    padding: 1rem;
+    font-size: 2rem;
+}
+.haha{
+    animation-name: scroll;
+    animation-duration: 2s;
+}
+.haha2{
+    animation-name: scroll2;
+    animation-duration: 2s;
+}
+@keyframes scroll {
+    0%{
+        opacity: 0;
+        transform: translateY(120px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@keyframes scroll2 {
+     0%{
+        opacity: 1;
+        opacity: 1;
+        transform: translateY(0px);
+     }
+     100%{
+        opacity: 0;
+        transform: translateY(120px);
+     }    
+}
