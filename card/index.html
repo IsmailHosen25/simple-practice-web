@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Card</title>
+</head>
+<body>
+  <div class="header">
+    <p class="logo">Card</p>
+    <div class="cart" id="maincart"><i class="fa-solid fa-cart-shopping"></i><p id="count">0</p></div>
+  </div>
+  <div class="container">
+    <div id="root"></div>
+    <div class="slideber" id="cart">
+       <div class="head"><p>My Cart</p></div>
+       <div id="cartitem"><p>Your cart is empty</p></div>
+       <div class="foot">
+        <h3>Total $<span id="total"> 0.00</span></h3>
+        <div class="btn">
+          <button class="btn" >Buy Now</button>
+        </div>
+       
+       </div>
+    </div>
+  </div>
+  <script src="products.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>

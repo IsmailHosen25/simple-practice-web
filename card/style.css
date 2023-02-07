@@ -1,0 +1,195 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+html{
+  font-size: 10px;
+  overflow-x: hidden;
+}
+.header{
+  width: 70%;
+  height:8rem ;
+  background-color: #3498db;
+  border-radius: 3px;
+  margin: 3rem 0rem;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+.header .logo{
+  font-size: 3rem;
+  font-weight: bold;
+}
+.header .cart{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 0.7rem 1rem;
+  font-size: 1.8rem;
+  width: 8%;
+}
+.header .cart .fa-solid{
+  color: #3498db;
+}
+.header .cart p{
+  width: 2.2rem;
+  height: 2.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3498db;
+  border-radius: 25px;
+}
+.container{
+  width: 70%;
+  display: flex;
+  margin-bottom: 3rem;
+  position: relative;
+}
+.container #root{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap:1.5rem;
+}
+.container #root .box{
+   width:30%;
+   border: 1px solid #3498db;
+   height: 38rem;
+   border-radius: 5px;
+   overflow: hidden;
+   padding: 1rem;
+}
+.container #root .box .img-box{
+  width:100%;
+  height: 80%;
+  overflow: hidden;
+}
+.container #root .box .img-box img{
+  width:100%;
+  height: 100%;
+}
+.container #root .box .bottom{
+  height: 20%;
+  width:100%;
+  padding:0.5rem;
+ gap:0.5rem;
+}
+.container #root .box .bottom p{
+  font-size: 1.5rem;
+}
+.container #root .box .bottom h2{
+  margin: 0.5rem 0rem;
+}
+.container #root .box .bottom button{
+  border: none;
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  background-color: #3498db;
+  color: #fff;
+  position: relative;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.container #root .box .bottom button:hover{
+  background-color: #000;
+}
+.container .slideber{
+  position: absolute;
+  right: 0%;
+  top: 0%;
+  height: 80vh;
+  width: 40%;
+  border-radius: 5px;
+  background-color: #e3e3e4;
+  margin-left: 2rem;
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 1.5rem;
+  transform: translateX(200%);
+  transition: transform 0.3s linear;
+  overflow: scroll;
+}
+.container .hello{
+  overflow: scroll;
+  transform: translateX(0%);
+  transition: transform 0.3s linear;
+}
+
+.container .slideber .head{
+  background-color: #3498db;
+  border-radius: 3px;
+  height: 4rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  color:#fff;
+  display: flex;
+  align-items: center;
+}
+.container .slideber .foot{
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ margin: 2rem 0rem;
+ padding: 1rem 0rem;
+ border-top: 1px solid #000;
+}
+.cart-itmes{
+  width: 100%;
+  height: 20rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cart-itmes .row-img{
+  width:40% ;
+  height: 70%;
+}
+.cart-itmes .row-img img{
+  width:100% ;
+  height: 100%;
+}
+.cart-itmes .right{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.cart-itmes .right i{
+  font-size: 2.5rem;
+  margin-top: 2rem;
+}
+.container .slideber .foot .btn{
+  width: 100%;
+  margin-top: 1rem;
+}
+.container .slideber .foot .btn button{
+  width: 100%;
+  color: #fff;
+  background-color: #000;
+  font-size: 1.5rem;
+  padding: 1rem 0rem;
+  transition: all 0.5s linear;
+}
+.container .slideber .foot .btn button:hover{
+  background-color: transparent;
+  color: #000;
+  border: 1px solid #000;
+  transition: all 0.5s linear;
+}
